@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sky Plastics | Premium Food Containers</title>
+
+    <!-- Correct (if CSS is in the same folder as index.html) -->
+<link rel="stylesheet" href="sky plastics.css">
+
+<!-- OR (if CSS is inside a subfolder named 'css') -->
+<link rel="stylesheet" href="css/sky plastics.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <a href="#" class="logo">
+                <img src="assets/sky-logo.png" alt="Sky Plastics">
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="cart-btn" onclick="openCart()">
+
+                🛒 Cart
+
+                <span id="cart-count">0</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="small-title">
+                    100% VIRGIN PLASTIC
+                </span>
+
+                <h1>
+                    Safe Containers.
+                    <span>Premium Quality.</span>
+                    Healthier Tomorrow.
+                </h1>
+
+                <p>
+                    Premium food containers designed for safe,
+                    reliable and efficient food packaging.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="primary-btn">
+                        Shop Products
+                    </a>
+
+                    <a href="#about" class="secondary-btn">
+                        Learn More
+                    </a>
+
+                </div>
+
+                <div class="features">
+
+                    <span>✓ Food Safe</span>
+                    <span>✓ Recyclable</span>
+                    <span>✓ Leak Proof</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/hero products.png"
+                    alt="Sky Plastics Products"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="feature-bar">
+
+        <div>
+            🛡️
+            <strong>Food Safe</strong>
+            <small>Quality Materials</small>
+        </div>
+
+        <div>
+            ❄️
+            <strong>Freezer Safe</strong>
+            <small>Suitable for storage</small>
+        </div>
+
+        <div>
+            ♻️
+            <strong>Recyclable</strong>
+            <small>Eco Friendly</small>
+        </div>
+
+        <div>
+            ✓
+            <strong>Leak Proof</strong>
+            <small>Strong & Durable</small>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-title">
+
+            <span>SHOP SKY PLASTICS</span>
+
+            <h2>
+                Products & Pricing
+            </h2>
+
+            <p>
+                Choose your required container and add it to your cart.
+            </p>
+
+        </div>
+
+
+        <!-- FILTER + SORT -->
+
+        <div class="product-toolbar">
+
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-category="all">
+                    All
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="round">
+                    Round Containers
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="biryani">
+                    Biryani Containers
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="glass">
+                    Glass Tumblers
+                </button>
+
+            </div>
+
+
+            <div class="sort">
+
+                <label>
+                    Sort By:
+                </label>
+
+                <select id="sort">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div
+            class="product-grid"
+            id="product-container">
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <div>
+
+                <span>
+                    ABOUT SKY PLASTICS
+                </span>
+
+                <h2>
+                    Better Material.
+                    <br>
+                    Better Products.
+                    <br>
+
+                    <strong>
+                        Better Health.
+                    </strong>
+                </h2>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <p>
+                    Sky Plastics is committed to delivering
+                    high-quality and reliable food containers
+                    made using 100% virgin plastic.
+                </p>
+
+                <p>
+                    Our products are designed with hygiene,
+                    durability and convenience in mind.
+                </p>
+
+                <div class="quality-grid">
+
+                    <div>✓ 100% Virgin Plastic</div>
+
+                    <div>✓ Food Grade</div>
+
+                    <div>✓ Durable</div>
+
+                    <div>✓ Recyclable</div>
+
+                    <div>✓ Leak Proof</div>
+
+                    <div>✓ Quality Finishing</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="contact-container">
+
+            <div>
+
+                <span>
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Ready to place an order?
+                </h2>
+
+                <p>
+                    Add your products to the cart and
+                    prepare your order.
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <p>
+                    ☎
+                    <a href="tel:8825588216">
+                        8825588216
+                    </a>
+                </p>
+
+                <p>
+                    ☎
+                    <a href="tel:9543250871">
+                        9543250871
+                    </a>
+                </p>
+
+                <p>
+                    ✉
+                    <a href="mailto:skyplasticsofficial@gmail.com">
+                        skyplasticsofficial@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    📍
+                    17/3, Dr. G. Radhakrishnan Nagar,
+                    Keela Devadhaman,
+                    Tiruchirappalli - 620002
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <img src="assets/sky-logo.png" alt="Sky Plastics">
+
+        <p>
+            © 2026 Sky Plastics. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART OVERLAY ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+        onclick="closeCart()">
+    </div>
+
+
+    <!-- ================= CART ================= -->
+
+    <aside
+        class="cart"
+        id="cart">
+
+        <div class="cart-header">
+
+            <div>
+
+                <span>
+                    YOUR ORDER
+                </span>
+
+                <h2>
+                    Shopping Cart
+                </h2>
+
+            </div>
+
+            <button
+                onclick="closeCart()"
+                class="close-btn">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cart-items">
+        </div>
+
+
+        <div
+            class="empty-cart"
+            id="empty-cart">
+
+            <div class="empty-icon">
+                🛒
+            </div>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add products to your cart.
+            </p>
+
+        </div>
+
+
+        <div
+            class="cart-footer"
+            id="cart-footer">
+
+            <div class="total-row">
+
+                <span>
+                    Total Items
+                </span>
+
+                <strong id="total-items">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="total-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="buy-btn"
+                onclick="buyNow()">
+
+                BUY NOW
+
+            </button>
+
+
+            <button
+                class="clear-btn"
+                onclick="clearCart()">
+
+                Clear Cart
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= ORDER MODAL ================= -->
+
+    <div
+        class="modal"
+        id="order-modal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                onclick="closeOrder()">
+
+                ×
+
+            </button>
+
+            <span>
+                ORDER REQUEST
+            </span>
+
+            <h2>
+                Confirm Your Order
+            </h2>
+
+
+            <div
+                id="order-summary"
+                class="order-summary">
+            </div>
+
+
+            <form id="order-form">
+
+                <label>
+                    Name
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        required
+                        placeholder="Enter your name">
+
+                </label>
+
+
+                <label>
+                    Phone Number
+
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        required
+                        placeholder="Enter phone number">
+
+                </label>
+
+
+                <label>
+                    Delivery Address
+
+                    <textarea
+                        id="customer-address"
+                        rows="3"
+                        required
+                        placeholder="Enter delivery address">
+                    </textarea>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="buy-btn">
+
+                    PLACE ORDER
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="sky plastics.js"></script>
+
+</body>
+
+</html>
